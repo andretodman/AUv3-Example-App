@@ -10,6 +10,7 @@ import Foundation
 import UIKit
 import AudioKit
 import Disk
+import AVFoundation
 
 class ParentController: UIViewController {
 

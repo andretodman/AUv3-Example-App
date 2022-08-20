@@ -7,6 +7,8 @@
 //
 
 import AudioKit
+import Foundation
+import UIKit
 
 @IBDesignable
 public class MIDIKnob: Knob, MIDILearnable, ParameterController {

@@ -8,6 +8,7 @@
 
 import Foundation
 import AudioKit
+import CoreMIDI
 
 // **********************************************************
 // MARK: - KEYBOARD DELEGATE

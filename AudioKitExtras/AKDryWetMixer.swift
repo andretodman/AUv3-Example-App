@@ -1,20 +1,15 @@
 //
-//  BalanceMixer.swift
-//  AU Example App
+//  AKDryWetMixer.swift
+//  AudioKit
 //
-//  Created by Jeff Cooper on 2/4/20.
-//  Copyright © 2020 AudioKit. All rights reserved.
+//  Created by Aurelius Prochazka, revision history on Github.
+//  Copyright © 2018 AudioKit. All rights reserved.
 //
-
 import Foundation
-import AudioKit
-import AVFoundation
-import AVFAudio
 
 /// Balanceable Mix between two signals, usually used for a dry signal and wet signal
-/// Based of AKDryWetMixer but adding functions for connecting inputs after init
 ///
-class BalanceMixer: AKNode, AKInput {
+open class AKDryWetMixer: AKNode, AKInput {
     fileprivate let mixer = AKMixer()
 
     /// Balance (Default 0.5)
@@ -31,7 +26,7 @@ class BalanceMixer: AKNode, AKInput {
     /// Tells whether the node is processing (ie. started, playing, or active)
     @objc open dynamic var isStarted = true
 
-    override init() {
+    override public init() {
         super.init()
         avAudioNode = mixer.avAudioNode
         self.input1Attenuator.connect(to: mixer)
@@ -55,6 +50,10 @@ class BalanceMixer: AKNode, AKInput {
         self.balance = balance
     }
 
+    @objc public convenience init(dry: AKNode, wet: AKNode, balance: Double = 0.5) {
+        self.init(dry, wet, balance: balance)
+    }
+
     public var inputNode: AVAudioNode {
         return input1Attenuator.avAudioUnitOrNode
     }
@@ -63,7 +62,7 @@ class BalanceMixer: AKNode, AKInput {
         connectInput1(using: input1)
         connectInput2(using: input2)
     }
-    
+
     func connectInput1(using node: AKNode) {
         node.connect(to: input1Attenuator)
     }
@@ -75,6 +74,20 @@ class BalanceMixer: AKNode, AKInput {
     private func setGainsViaBalance() {
         input1Attenuator.volume = 1 - balance
         input2Attentuator.volume = balance
+    }
+
+    // Disconnect the node
+    open override func detach() {
+        AKManager.detach(nodes: [mixer.avAudioUnitOrNode,
+                                input1Attenuator.avAudioUnitOrNode, input2Attentuator.avAudioUnitOrNode])
+    }
+
+    open var dryInput: AVAudioConnectionPoint {
+        return AVAudioConnectionPoint(node: input1Attenuator.avAudioUnitOrNode, bus: 0)
+    }
+
+    open var wetInput: AVAudioConnectionPoint {
+        return AVAudioConnectionPoint(node: input2Attentuator.avAudioUnitOrNode, bus: 0)
     }
 
 }

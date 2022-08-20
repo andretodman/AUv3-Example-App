@@ -8,6 +8,7 @@
 
 import AudioKit
 import UIKit
+import AVFAudio
 
 protocol MIDISettingsPopOverDelegate: AnyObject {
     func resetMIDILearn()

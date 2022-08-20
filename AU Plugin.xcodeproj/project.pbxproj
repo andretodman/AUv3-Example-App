@@ -3,10 +3,70 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		580C0A4128B0606400D4B69C /* AudioKit in Frameworks */ = {isa = PBXBuildFile; productRef = 580C0A4028B0606400D4B69C /* AudioKit */; };
+		580C0A4628B0607E00D4B69C /* AudioKitUI in Frameworks */ = {isa = PBXBuildFile; productRef = 580C0A4528B0607E00D4B69C /* AudioKitUI */; };
+		580C0A4928B062B300D4B69C /* AKMIDIInstrument.swift in Sources */ = {isa = PBXBuildFile; fileRef = 580C0A4828B062B300D4B69C /* AKMIDIInstrument.swift */; };
+		580C0A4B28B062E900D4B69C /* AKBluetoothMIDIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 580C0A4A28B062E900D4B69C /* AKBluetoothMIDIButton.swift */; };
+		580C0A4C28B0649100D4B69C /* AKBluetoothMIDIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 580C0A4A28B062E900D4B69C /* AKBluetoothMIDIButton.swift */; };
+		580C0A4E28B0651900D4B69C /* AudioKitHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 580C0A4D28B0651900D4B69C /* AudioKitHelpers.swift */; };
+		580C0A4F28B0651900D4B69C /* AudioKitHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 580C0A4D28B0651900D4B69C /* AudioKitHelpers.swift */; };
+		580C0A5128B0655300D4B69C /* AKMIDIListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = 580C0A5028B0655300D4B69C /* AKMIDIListener.swift */; };
+		580C0A5228B0655300D4B69C /* AKMIDIListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = 580C0A5028B0655300D4B69C /* AKMIDIListener.swift */; };
+		580C0A5428B065BE00D4B69C /* AKDryWetMixer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 580C0A5328B065BE00D4B69C /* AKDryWetMixer.swift */; };
+		580C0A5528B065BE00D4B69C /* AKDryWetMixer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 580C0A5328B065BE00D4B69C /* AKDryWetMixer.swift */; };
+		580C0A5728B065F100D4B69C /* AKSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 580C0A5628B065F100D4B69C /* AKSettings.swift */; };
+		580C0A5828B065F100D4B69C /* AKSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 580C0A5628B065F100D4B69C /* AKSettings.swift */; };
+		580C0A5A28B0663000D4B69C /* AKMixer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 580C0A5928B0663000D4B69C /* AKMixer.swift */; };
+		580C0A5B28B0663000D4B69C /* AKMixer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 580C0A5928B0663000D4B69C /* AKMixer.swift */; };
+		580C0A6328B066D000D4B69C /* AKAutoPanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 580C0A6228B066D000D4B69C /* AKAutoPanner.swift */; };
+		580C0A6428B066D000D4B69C /* AKAutoPanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 580C0A6228B066D000D4B69C /* AKAutoPanner.swift */; };
+		580C0A6828B0671600D4B69C /* AKCostelloReverb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 580C0A6728B0671600D4B69C /* AKCostelloReverb.swift */; };
+		580C0A6928B0671600D4B69C /* AKCostelloReverb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 580C0A6728B0671600D4B69C /* AKCostelloReverb.swift */; };
+		580C0A6B28B0685100D4B69C /* AKLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 580C0A6A28B0685100D4B69C /* AKLog.swift */; };
+		580C0A6C28B0685100D4B69C /* AKLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 580C0A6A28B0685100D4B69C /* AKLog.swift */; };
+		580C0A6E28B0687A00D4B69C /* AKNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 580C0A6D28B0687A00D4B69C /* AKNode.swift */; };
+		580C0A6F28B0687A00D4B69C /* AKNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 580C0A6D28B0687A00D4B69C /* AKNode.swift */; };
+		580C0A7528B070A200D4B69C /* AKManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 580C0A7428B070A200D4B69C /* AKManager.swift */; };
+		580C0A7628B070A200D4B69C /* AKManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 580C0A7428B070A200D4B69C /* AKManager.swift */; };
+		580C0A7828B0718B00D4B69C /* AKTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 580C0A7728B0718B00D4B69C /* AKTable.swift */; };
+		580C0A7928B0718B00D4B69C /* AKTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 580C0A7728B0718B00D4B69C /* AKTable.swift */; };
+		580C0A7B28B0721800D4B69C /* AKComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 580C0A7A28B0721800D4B69C /* AKComponent.swift */; };
+		580C0A7C28B0721800D4B69C /* AKComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 580C0A7A28B0721800D4B69C /* AKComponent.swift */; };
+		580C0A7E28B072B400D4B69C /* AKConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 580C0A7D28B072B400D4B69C /* AKConnection.swift */; };
+		580C0A7F28B072B400D4B69C /* AKConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 580C0A7D28B072B400D4B69C /* AKConnection.swift */; };
+		580C0A8128B072D700D4B69C /* AKTremoloAudioUnit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 580C0A8028B072D700D4B69C /* AKTremoloAudioUnit.swift */; };
+		580C0A8228B072D700D4B69C /* AKTremoloAudioUnit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 580C0A8028B072D700D4B69C /* AKTremoloAudioUnit.swift */; };
+		580C0A8428B0738300D4B69C /* AKManager+SafeConnections.swift in Sources */ = {isa = PBXBuildFile; fileRef = 580C0A8328B0738300D4B69C /* AKManager+SafeConnections.swift */; };
+		580C0A8528B0738300D4B69C /* AKManager+SafeConnections.swift in Sources */ = {isa = PBXBuildFile; fileRef = 580C0A8328B0738300D4B69C /* AKManager+SafeConnections.swift */; };
+		580C0A8728B0746200D4B69C /* AKMIDI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 580C0A8628B0746200D4B69C /* AKMIDI.swift */; };
+		580C0A8828B0746200D4B69C /* AKMIDI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 580C0A8628B0746200D4B69C /* AKMIDI.swift */; };
+		580C0A8A28B074A200D4B69C /* AKManager+StartStop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 580C0A8928B074A200D4B69C /* AKManager+StartStop.swift */; };
+		580C0A8B28B074A200D4B69C /* AKManager+StartStop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 580C0A8928B074A200D4B69C /* AKManager+StartStop.swift */; };
+		580C0A8D28B074BC00D4B69C /* AKDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 580C0A8C28B074BC00D4B69C /* AKDevice.swift */; };
+		580C0A8E28B074BC00D4B69C /* AKDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 580C0A8C28B074BC00D4B69C /* AKDevice.swift */; };
+		580C0A9028B0752C00D4B69C /* AKError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 580C0A8F28B0752C00D4B69C /* AKError.swift */; };
+		580C0A9128B0752C00D4B69C /* AKError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 580C0A8F28B0752C00D4B69C /* AKError.swift */; };
+		580C0A9A28B0759500D4B69C /* AKGeneratorAudioUnitBase.mm in Sources */ = {isa = PBXBuildFile; fileRef = 580C0A9728B0759500D4B69C /* AKGeneratorAudioUnitBase.mm */; };
+		580C0A9B28B0759500D4B69C /* AKGeneratorAudioUnitBase.mm in Sources */ = {isa = PBXBuildFile; fileRef = 580C0A9728B0759500D4B69C /* AKGeneratorAudioUnitBase.mm */; };
+		580C0A9C28B0759500D4B69C /* AKDSPBase.mm in Sources */ = {isa = PBXBuildFile; fileRef = 580C0A9828B0759500D4B69C /* AKDSPBase.mm */; };
+		580C0A9D28B0759500D4B69C /* AKDSPBase.mm in Sources */ = {isa = PBXBuildFile; fileRef = 580C0A9828B0759500D4B69C /* AKDSPBase.mm */; };
+		580C0A9E28B0759500D4B69C /* AKAudioUnitBase.mm in Sources */ = {isa = PBXBuildFile; fileRef = 580C0A9928B0759500D4B69C /* AKAudioUnitBase.mm */; };
+		580C0A9F28B0759500D4B69C /* AKAudioUnitBase.mm in Sources */ = {isa = PBXBuildFile; fileRef = 580C0A9928B0759500D4B69C /* AKAudioUnitBase.mm */; };
+		580C0AA428B0773B00D4B69C /* ExceptionCatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 580C0AA128B0773B00D4B69C /* ExceptionCatcher.swift */; };
+		580C0AA528B0773B00D4B69C /* ExceptionCatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 580C0AA128B0773B00D4B69C /* ExceptionCatcher.swift */; };
+		580C0AA628B0773B00D4B69C /* ExceptionCatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 580C0AA228B0773B00D4B69C /* ExceptionCatcher.m */; };
+		580C0AA728B0773B00D4B69C /* ExceptionCatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 580C0AA228B0773B00D4B69C /* ExceptionCatcher.m */; };
+		580C0AA828B078D700D4B69C /* AKMIDIInstrument.swift in Sources */ = {isa = PBXBuildFile; fileRef = 580C0A4828B062B300D4B69C /* AKMIDIInstrument.swift */; };
+		580C0AAD28B0798D00D4B69C /* AKTremolo.mm in Sources */ = {isa = PBXBuildFile; fileRef = 580C0AA928B0798D00D4B69C /* AKTremolo.mm */; };
+		580C0AAE28B0798D00D4B69C /* AKTremolo.mm in Sources */ = {isa = PBXBuildFile; fileRef = 580C0AA928B0798D00D4B69C /* AKTremolo.mm */; };
+		580C0AAF28B0798D00D4B69C /* AKTremolo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 580C0AAA28B0798D00D4B69C /* AKTremolo.swift */; };
+		580C0AB028B0798D00D4B69C /* AKTremolo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 580C0AAA28B0798D00D4B69C /* AKTremolo.swift */; };
+		580C0AB128B0798D00D4B69C /* AKTremoloAudioUnit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 580C0AAC28B0798D00D4B69C /* AKTremoloAudioUnit.swift */; };
+		580C0AB228B0798D00D4B69C /* AKTremoloAudioUnit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 580C0AAC28B0798D00D4B69C /* AKTremoloAudioUnit.swift */; };
 		6397B331AB0E5BBC9BF0D9D5 /* Pods_AU_Plugin_AU.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90DCEC01C1F3778162432B4E /* Pods_AU_Plugin_AU.framework */; };
 		8A7502AA656BA10A8BBCBC1D /* Pods_AU_Plugin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68FD856782731374D0D6779A /* Pods_AU_Plugin.framework */; };
 		9408A86D23EB64A100023FAA /* Presets+Callbacks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9408A86C23EB64A100023FAA /* Presets+Callbacks.swift */; };
@@ -290,20 +350,6 @@
 			remoteGlobalIDString = FE37D82223C66299006B65D9;
 			remoteInfo = "Morehouse Mk I";
 		};
-		FEDA746025657287006281AE /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = FEDA745B25657286006281AE /* AudioKit For iOS.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = C42F35001C057E03000E937C;
-			remoteInfo = AudioKit;
-		};
-		FEDA746225657287006281AE /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = FEDA745B25657286006281AE /* AudioKit For iOS.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = EA7D07011F4E63C200707706;
-			remoteInfo = AudioKitUI;
-		};
 		FEFB0E1123CE3B57003A353D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = FE37D7D523C5132E006B65D9 /* Project object */;
@@ -347,6 +393,40 @@
 
 /* Begin PBXFileReference section */
 		5375025AA958A7E265174205 /* Pods-AU Plugin AU.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AU Plugin AU.release.xcconfig"; path = "Target Support Files/Pods-AU Plugin AU/Pods-AU Plugin AU.release.xcconfig"; sourceTree = "<group>"; };
+		580C0A4828B062B300D4B69C /* AKMIDIInstrument.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AKMIDIInstrument.swift; sourceTree = "<group>"; };
+		580C0A4A28B062E900D4B69C /* AKBluetoothMIDIButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AKBluetoothMIDIButton.swift; sourceTree = "<group>"; };
+		580C0A4D28B0651900D4B69C /* AudioKitHelpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioKitHelpers.swift; sourceTree = "<group>"; };
+		580C0A5028B0655300D4B69C /* AKMIDIListener.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AKMIDIListener.swift; sourceTree = "<group>"; };
+		580C0A5328B065BE00D4B69C /* AKDryWetMixer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AKDryWetMixer.swift; sourceTree = "<group>"; };
+		580C0A5628B065F100D4B69C /* AKSettings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AKSettings.swift; sourceTree = "<group>"; };
+		580C0A5928B0663000D4B69C /* AKMixer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AKMixer.swift; sourceTree = "<group>"; };
+		580C0A6228B066D000D4B69C /* AKAutoPanner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AKAutoPanner.swift; sourceTree = "<group>"; };
+		580C0A6728B0671600D4B69C /* AKCostelloReverb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AKCostelloReverb.swift; sourceTree = "<group>"; };
+		580C0A6A28B0685100D4B69C /* AKLog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AKLog.swift; sourceTree = "<group>"; };
+		580C0A6D28B0687A00D4B69C /* AKNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AKNode.swift; sourceTree = "<group>"; };
+		580C0A7428B070A200D4B69C /* AKManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AKManager.swift; sourceTree = "<group>"; };
+		580C0A7728B0718B00D4B69C /* AKTable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AKTable.swift; sourceTree = "<group>"; };
+		580C0A7A28B0721800D4B69C /* AKComponent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AKComponent.swift; sourceTree = "<group>"; };
+		580C0A7D28B072B400D4B69C /* AKConnection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AKConnection.swift; sourceTree = "<group>"; };
+		580C0A8028B072D700D4B69C /* AKTremoloAudioUnit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AKTremoloAudioUnit.swift; sourceTree = "<group>"; };
+		580C0A8328B0738300D4B69C /* AKManager+SafeConnections.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AKManager+SafeConnections.swift"; sourceTree = "<group>"; };
+		580C0A8628B0746200D4B69C /* AKMIDI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AKMIDI.swift; sourceTree = "<group>"; };
+		580C0A8928B074A200D4B69C /* AKManager+StartStop.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AKManager+StartStop.swift"; sourceTree = "<group>"; };
+		580C0A8C28B074BC00D4B69C /* AKDevice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AKDevice.swift; sourceTree = "<group>"; };
+		580C0A8F28B0752C00D4B69C /* AKError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AKError.swift; sourceTree = "<group>"; };
+		580C0A9428B0759500D4B69C /* AKDSPBase.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = AKDSPBase.hpp; sourceTree = "<group>"; };
+		580C0A9528B0759500D4B69C /* AKAudioUnitBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AKAudioUnitBase.h; sourceTree = "<group>"; };
+		580C0A9628B0759500D4B69C /* AKGeneratorAudioUnitBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AKGeneratorAudioUnitBase.h; sourceTree = "<group>"; };
+		580C0A9728B0759500D4B69C /* AKGeneratorAudioUnitBase.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = AKGeneratorAudioUnitBase.mm; sourceTree = "<group>"; };
+		580C0A9828B0759500D4B69C /* AKDSPBase.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = AKDSPBase.mm; sourceTree = "<group>"; };
+		580C0A9928B0759500D4B69C /* AKAudioUnitBase.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = AKAudioUnitBase.mm; sourceTree = "<group>"; };
+		580C0AA128B0773B00D4B69C /* ExceptionCatcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExceptionCatcher.swift; sourceTree = "<group>"; };
+		580C0AA228B0773B00D4B69C /* ExceptionCatcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExceptionCatcher.m; sourceTree = "<group>"; };
+		580C0AA328B0773B00D4B69C /* ExceptionCatcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExceptionCatcher.h; sourceTree = "<group>"; };
+		580C0AA928B0798D00D4B69C /* AKTremolo.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = AKTremolo.mm; sourceTree = "<group>"; };
+		580C0AAA28B0798D00D4B69C /* AKTremolo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AKTremolo.swift; sourceTree = "<group>"; };
+		580C0AAB28B0798D00D4B69C /* AKTremoloDSP.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = AKTremoloDSP.hpp; sourceTree = "<group>"; };
+		580C0AAC28B0798D00D4B69C /* AKTremoloAudioUnit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AKTremoloAudioUnit.swift; sourceTree = "<group>"; };
 		641710BD765FBB43B11F2EA0 /* Pods-AU Plugin AU.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AU Plugin AU.debug.xcconfig"; path = "Target Support Files/Pods-AU Plugin AU/Pods-AU Plugin AU.debug.xcconfig"; sourceTree = "<group>"; };
 		68FD856782731374D0D6779A /* Pods_AU_Plugin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AU_Plugin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6FE78EE34B24A12E7A1E88DE /* Pods-AU Plugin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AU Plugin.release.xcconfig"; path = "Target Support Files/Pods-AU Plugin/Pods-AU Plugin.release.xcconfig"; sourceTree = "<group>"; };
@@ -487,7 +567,6 @@
 		FEC4CD82244FA50800E9BF15 /* Conductor+Notifications.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Conductor+Notifications.swift"; sourceTree = "<group>"; };
 		FEC4CD85244FAA3600E9BF15 /* Conductor+MIDI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Conductor+MIDI.swift"; sourceTree = "<group>"; };
 		FEC4CD8B244FAA9900E9BF15 /* MIDICCDefinition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MIDICCDefinition.swift; sourceTree = "<group>"; };
-		FEDA745B25657286006281AE /* AudioKit For iOS.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "AudioKit For iOS.xcodeproj"; path = "AudioKit/AudioKit/iOS/AudioKit For iOS.xcodeproj"; sourceTree = "<group>"; };
 		FEDB5D9323E0EC0F003DBE44 /* Parent+MIDI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Parent+MIDI.swift"; sourceTree = "<group>"; };
 		FEDB7AFF245B6A0700D2EB29 /* Presets+CollectionCellDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Presets+CollectionCellDelegate.swift"; sourceTree = "<group>"; };
 		FEDEC89A23EDF80600BBA730 /* PresetsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresetsManager.swift; sourceTree = "<group>"; };
@@ -511,7 +590,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				580C0A4128B0606400D4B69C /* AudioKit in Frameworks */,
 				FEFB0E2023CE4045003A353D /* ExampleApp_Assets.framework in Frameworks */,
+				580C0A4628B0607E00D4B69C /* AudioKitUI in Frameworks */,
 				8A7502AA656BA10A8BBCBC1D /* Pods_AU_Plugin.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -535,6 +616,111 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		580C0A4728B0628900D4B69C /* AudioKitExtras */ = {
+			isa = PBXGroup;
+			children = (
+				580C0A6528B0671600D4B69C /* Reverb */,
+				580C0A6028B066D000D4B69C /* Mixing */,
+				580C0A5C28B0668D00D4B69C /* Instruments */,
+				580C0A5328B065BE00D4B69C /* AKDryWetMixer.swift */,
+				580C0A8328B0738300D4B69C /* AKManager+SafeConnections.swift */,
+				580C0A9228B0759500D4B69C /* CoreAudio */,
+				580C0A5928B0663000D4B69C /* AKMixer.swift */,
+				580C0A7D28B072B400D4B69C /* AKConnection.swift */,
+				580C0A8F28B0752C00D4B69C /* AKError.swift */,
+				580C0A8C28B074BC00D4B69C /* AKDevice.swift */,
+				580C0A5628B065F100D4B69C /* AKSettings.swift */,
+				580C0AA028B0773B00D4B69C /* Exception Catcher */,
+				580C0A7728B0718B00D4B69C /* AKTable.swift */,
+				580C0A8928B074A200D4B69C /* AKManager+StartStop.swift */,
+				580C0A8628B0746200D4B69C /* AKMIDI.swift */,
+				580C0A6A28B0685100D4B69C /* AKLog.swift */,
+				580C0A4A28B062E900D4B69C /* AKBluetoothMIDIButton.swift */,
+				580C0A8028B072D700D4B69C /* AKTremoloAudioUnit.swift */,
+				580C0A7428B070A200D4B69C /* AKManager.swift */,
+				580C0A7A28B0721800D4B69C /* AKComponent.swift */,
+				580C0A4D28B0651900D4B69C /* AudioKitHelpers.swift */,
+				580C0A6D28B0687A00D4B69C /* AKNode.swift */,
+				580C0A5028B0655300D4B69C /* AKMIDIListener.swift */,
+				580C0A4828B062B300D4B69C /* AKMIDIInstrument.swift */,
+			);
+			path = AudioKitExtras;
+			sourceTree = "<group>";
+		};
+		580C0A5C28B0668D00D4B69C /* Instruments */ = {
+			isa = PBXGroup;
+			children = (
+				580C0AA928B0798D00D4B69C /* AKTremolo.mm */,
+				580C0AAA28B0798D00D4B69C /* AKTremolo.swift */,
+				580C0AAC28B0798D00D4B69C /* AKTremoloAudioUnit.swift */,
+				580C0AAB28B0798D00D4B69C /* AKTremoloDSP.hpp */,
+			);
+			path = Instruments;
+			sourceTree = "<group>";
+		};
+		580C0A6028B066D000D4B69C /* Mixing */ = {
+			isa = PBXGroup;
+			children = (
+				580C0A6128B066D000D4B69C /* Auto Panner */,
+			);
+			path = Mixing;
+			sourceTree = "<group>";
+		};
+		580C0A6128B066D000D4B69C /* Auto Panner */ = {
+			isa = PBXGroup;
+			children = (
+				580C0A6228B066D000D4B69C /* AKAutoPanner.swift */,
+			);
+			path = "Auto Panner";
+			sourceTree = "<group>";
+		};
+		580C0A6528B0671600D4B69C /* Reverb */ = {
+			isa = PBXGroup;
+			children = (
+				580C0A6628B0671600D4B69C /* Costello Reverb */,
+			);
+			path = Reverb;
+			sourceTree = "<group>";
+		};
+		580C0A6628B0671600D4B69C /* Costello Reverb */ = {
+			isa = PBXGroup;
+			children = (
+				580C0A6728B0671600D4B69C /* AKCostelloReverb.swift */,
+			);
+			path = "Costello Reverb";
+			sourceTree = "<group>";
+		};
+		580C0A9228B0759500D4B69C /* CoreAudio */ = {
+			isa = PBXGroup;
+			children = (
+				580C0A9328B0759500D4B69C /* AK4 */,
+			);
+			path = CoreAudio;
+			sourceTree = "<group>";
+		};
+		580C0A9328B0759500D4B69C /* AK4 */ = {
+			isa = PBXGroup;
+			children = (
+				580C0A9428B0759500D4B69C /* AKDSPBase.hpp */,
+				580C0A9528B0759500D4B69C /* AKAudioUnitBase.h */,
+				580C0A9628B0759500D4B69C /* AKGeneratorAudioUnitBase.h */,
+				580C0A9728B0759500D4B69C /* AKGeneratorAudioUnitBase.mm */,
+				580C0A9828B0759500D4B69C /* AKDSPBase.mm */,
+				580C0A9928B0759500D4B69C /* AKAudioUnitBase.mm */,
+			);
+			path = AK4;
+			sourceTree = "<group>";
+		};
+		580C0AA028B0773B00D4B69C /* Exception Catcher */ = {
+			isa = PBXGroup;
+			children = (
+				580C0AA128B0773B00D4B69C /* ExceptionCatcher.swift */,
+				580C0AA228B0773B00D4B69C /* ExceptionCatcher.m */,
+				580C0AA328B0773B00D4B69C /* ExceptionCatcher.h */,
+			);
+			path = "Exception Catcher";
+			sourceTree = "<group>";
+		};
 		8390CE2088F91D434900F855 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -781,7 +967,7 @@
 		FE37D7D423C5132E006B65D9 = {
 			isa = PBXGroup;
 			children = (
-				FEDA745B25657286006281AE /* AudioKit For iOS.xcodeproj */,
+				580C0A4728B0628900D4B69C /* AudioKitExtras */,
 				FE37D7DF23C5132E006B65D9 /* Example Plugin App */,
 				FE37D82423C66299006B65D9 /* Example Plugin App AU */,
 				FEFB0E0D23CE3B57003A353D /* ExampleApp Assets */,
@@ -938,15 +1124,6 @@
 			path = Managers;
 			sourceTree = "<group>";
 		};
-		FEDA745C25657286006281AE /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				FEDA746125657287006281AE /* AudioKit.framework */,
-				FEDA746325657287006281AE /* AudioKitUI.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		FEFB0E0D23CE3B57003A353D /* ExampleApp Assets */ = {
 			isa = PBXGroup;
 			children = (
@@ -1005,6 +1182,10 @@
 				FEFB0E1223CE3B57003A353D /* PBXTargetDependency */,
 			);
 			name = "AU Plugin";
+			packageProductDependencies = (
+				580C0A4028B0606400D4B69C /* AudioKit */,
+				580C0A4528B0607E00D4B69C /* AudioKitUI */,
+			);
 			productName = "Morehouse Mark I";
 			productReference = FE37D7DD23C5132E006B65D9 /* AUv3 Example.app */;
 			productType = "com.apple.product-type.application";
@@ -1076,14 +1257,12 @@
 				Base,
 			);
 			mainGroup = FE37D7D423C5132E006B65D9;
+			packageReferences = (
+				580C0A3F28B0606400D4B69C /* XCRemoteSwiftPackageReference "AudioKit" */,
+				580C0A4428B0607E00D4B69C /* XCRemoteSwiftPackageReference "AudioKitUI" */,
+			);
 			productRefGroup = FE37D7DE23C5132E006B65D9 /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = FEDA745C25657286006281AE /* Products */;
-					ProjectRef = FEDA745B25657286006281AE /* AudioKit For iOS.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				FE37D7DC23C5132E006B65D9 /* AU Plugin */,
@@ -1092,23 +1271,6 @@
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		FEDA746125657287006281AE /* AudioKit.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = AudioKit.framework;
-			remoteRef = FEDA746025657287006281AE /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		FEDA746325657287006281AE /* AudioKitUI.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = AudioKitUI.framework;
-			remoteRef = FEDA746225657287006281AE /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		FE37D7DB23C5132E006B65D9 /* Resources */ = {
@@ -1227,6 +1389,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				94EB279023CEA4BB00069852 /* LFOWavePicker.swift in Sources */,
+				580C0A7E28B072B400D4B69C /* AKConnection.swift in Sources */,
 				FEDB5D9423E0EC10003DBE44 /* Parent+MIDI.swift in Sources */,
 				FE37D81623C52B6A006B65D9 /* Double+Extensions.swift in Sources */,
 				94EB272C23CEA4BA00069852 /* FlatToggleStyleKit.swift in Sources */,
@@ -1243,6 +1406,7 @@
 				94EB274823CEA4BA00069852 /* LedToggleStyleKit.swift in Sources */,
 				FEFB0E2523CE45E4003A353D /* ParentController.swift in Sources */,
 				94EB278223CEA4BB00069852 /* SequencerNoteButton.swift in Sources */,
+				580C0A4B28B062E900D4B69C /* AKBluetoothMIDIButton.swift in Sources */,
 				94EB272623CEA4BA00069852 /* TopUIButtonStyleKit.swift in Sources */,
 				94EB274423CEA4BA00069852 /* StepperStyleKit.swift in Sources */,
 				9499DAAE23D10878009128AD /* Bundle+Extensions.swift in Sources */,
@@ -1257,26 +1421,37 @@
 				FE4AA900246F1A9B007DEA13 /* FileConstants.swift in Sources */,
 				FE43F3CB23D5051600A05F88 /* LocalNotificationCenter.swift in Sources */,
 				94EB273C23CEA4BA00069852 /* ToggleSwitchStyleKit.swift in Sources */,
+				580C0AB128B0798D00D4B69C /* AKTremoloAudioUnit.swift in Sources */,
 				94EB277A23CEA4BB00069852 /* TouchPoint.swift in Sources */,
 				94EB274C23CEA4BB00069852 /* ButtonStyleKit.swift in Sources */,
+				580C0A6828B0671600D4B69C /* AKCostelloReverb.swift in Sources */,
 				FE0A56B523D66BF900330F1C /* MIDIByte+Extension.swift in Sources */,
 				FEED0FF123E23FA2002EC6A8 /* InstrumentPreset.swift in Sources */,
+				580C0A4E28B0651900D4B69C /* AudioKitHelpers.swift in Sources */,
 				94EB279B23CEAC6B00069852 /* ChildView.swift in Sources */,
+				580C0A9E28B0759500D4B69C /* AKAudioUnitBase.mm in Sources */,
+				580C0A5A28B0663000D4B69C /* AKMixer.swift in Sources */,
 				94EB275223CEA4BB00069852 /* TempoStyleKit.swift in Sources */,
+				580C0A6E28B0687A00D4B69C /* AKNode.swift in Sources */,
 				94EB276E23CEA4BB00069852 /* KnobStyleKit2.swift in Sources */,
 				FEB840D72497F96200B66186 /* DiskManager.swift in Sources */,
 				9408A87323EB714F00023FAA /* Presets+PresetCellDelegate.swift in Sources */,
 				FE57886123EE4A720058B986 /* ModuloOperator.swift in Sources */,
+				580C0A8D28B074BC00D4B69C /* AKDevice.swift in Sources */,
+				580C0A5428B065BE00D4B69C /* AKDryWetMixer.swift in Sources */,
 				94384D2823D79B650070CC43 /* AppSetting.swift in Sources */,
 				94EB274023CEA4BA00069852 /* ToggleButton.swift in Sources */,
+				580C0A6328B066D000D4B69C /* AKAutoPanner.swift in Sources */,
 				94EB276A23CEA4BB00069852 /* MIDIKnob.swift in Sources */,
 				FE5A77A3246A1929008F55AF /* Presets+EditPopoverDelegate.swift in Sources */,
 				94EB272E23CEA4BA00069852 /* FilterToggleButton.swift in Sources */,
 				94EB26DD23CE9BEB00069852 /* MainController.swift in Sources */,
+				580C0AA628B0773B00D4B69C /* ExceptionCatcher.m in Sources */,
 				94EB273623CEA4BA00069852 /* TopUIButton.swift in Sources */,
 				94EB279F23CEAC8900069852 /* Bank.swift in Sources */,
 				9499DAB923D109D8009128AD /* MIDIInput.swift in Sources */,
 				94A0534E23D3BDE400E33EC2 /* SynthKeyboard.swift in Sources */,
+				580C0A7528B070A200D4B69C /* AKManager.swift in Sources */,
 				FE4AA8FD246F112F007DEA13 /* PresetConstants.swift in Sources */,
 				FE335C1123F2068300C7A6BF /* ParameterController.swift in Sources */,
 				94EB274E23CEA4BB00069852 /* MIDILearnable.swift in Sources */,
@@ -1297,33 +1472,47 @@
 				943F31C223E4D8CE0068FDA5 /* PresetsController.swift in Sources */,
 				94EB275823CEA4BB00069852 /* FlatKnob.swift in Sources */,
 				FEED0FEA23E0FEF4002EC6A8 /* NotificationNames.swift in Sources */,
+				580C0A6B28B0685100D4B69C /* AKLog.swift in Sources */,
+				580C0A9C28B0759500D4B69C /* AKDSPBase.mm in Sources */,
 				FEC4CD86244FAA3600E9BF15 /* Conductor+MIDI.swift in Sources */,
+				580C0A8428B0738300D4B69C /* AKManager+SafeConnections.swift in Sources */,
 				FE5A779D2469E888008F55AF /* Presets+TableViewDelegate.swift in Sources */,
 				FE5A77962469BD15008F55AF /* PresetCollectionCell.swift in Sources */,
+				580C0A8128B072D700D4B69C /* AKTremoloAudioUnit.swift in Sources */,
+				580C0A5128B0655300D4B69C /* AKMIDIListener.swift in Sources */,
 				FE37D81823C53196006B65D9 /* Conductor.swift in Sources */,
+				580C0A4928B062B300D4B69C /* AKMIDIInstrument.swift in Sources */,
 				94EB273223CEA4BA00069852 /* PresetUIButton.swift in Sources */,
 				949F591B23D3970600102856 /* Parent+Segues.swift in Sources */,
 				94EB278623CEA4BB00069852 /* SliderStyleKit.swift in Sources */,
 				94EB272823CEA4BA00069852 /* UrlButton.swift in Sources */,
 				9408A86D23EB64A100023FAA /* Presets+Callbacks.swift in Sources */,
+				580C0A9A28B0759500D4B69C /* AKGeneratorAudioUnitBase.mm in Sources */,
 				FEED0FE723E0F97C002EC6A8 /* AudioConstants.swift in Sources */,
 				9408A87023EB70AB00023FAA /* Presets+TextView.swift in Sources */,
 				94EB276223CEA4BB00069852 /* Rate.swift in Sources */,
 				94384D2623D79B600070CC43 /* AppSettingDataManager.swift in Sources */,
 				FE5A77A02469E8DC008F55AF /* Presets+DataSource.swift in Sources */,
+				580C0A5728B065F100D4B69C /* AKSettings.swift in Sources */,
 				94EB278E23CEA4BB00069852 /* FilterPickerStyleKit.swift in Sources */,
+				580C0A8A28B074A200D4B69C /* AKManager+StartStop.swift in Sources */,
 				FE37D81323C51A8C006B65D9 /* GeneratorBank.swift in Sources */,
 				94EB278823CEA4BB00069852 /* ArpDirectionStyleKit.swift in Sources */,
 				FEFB0E3623CFC123003A353D /* Conductor+Setters.swift in Sources */,
 				FEC4CD83244FA50800E9BF15 /* Conductor+Notifications.swift in Sources */,
 				94EB272A23CEA4BA00069852 /* ChannelStepper.swift in Sources */,
+				580C0AA428B0773B00D4B69C /* ExceptionCatcher.swift in Sources */,
 				FEFB0E2B23CE5AD3003A353D /* ExampleInstrumentParameter.swift in Sources */,
+				580C0A9028B0752C00D4B69C /* AKError.swift in Sources */,
 				94AD1CF7245A13410095FFB9 /* BankEditorPopOver.swift in Sources */,
 				FE37D81123C51A83006B65D9 /* Fatten.swift in Sources */,
 				9499DAB023D10878009128AD /* String+Extensionst.swift in Sources */,
 				94EB279423CEA4BB00069852 /* FilterWavePicker.swift in Sources */,
 				949F591823D394AC00102856 /* Parent+Delegates.swift in Sources */,
 				94EB273A23CEA4BA00069852 /* RadioButton.swift in Sources */,
+				580C0A8728B0746200D4B69C /* AKMIDI.swift in Sources */,
+				580C0A7B28B0721800D4B69C /* AKComponent.swift in Sources */,
+				580C0AAF28B0798D00D4B69C /* AKTremolo.swift in Sources */,
 				94EB276423CEA4BB00069852 /* Knob.swift in Sources */,
 				9455326523D0EEF5009551F0 /* KeyboardContainer.swift in Sources */,
 				9499DAAC23D10878009128AD /* ViewController+DisplayAlert.swift in Sources */,
@@ -1331,6 +1520,7 @@
 				9499DAA223D10815009128AD /* PopUpMIDIController.swift in Sources */,
 				94EB273423CEA4BA00069852 /* SynthUIButton.swift in Sources */,
 				94EB275E23CEA4BB00069852 /* FlatKnobStyleKit.swift in Sources */,
+				580C0A7828B0718B00D4B69C /* AKTable.swift in Sources */,
 				941F6CDC23DA4A510070F11E /* (null) in Sources */,
 				94EB276823CEA4BB00069852 /* Knob+Touches.swift in Sources */,
 				9499DAA023D10815009128AD /* PopUpKeySettingsController.swift in Sources */,
@@ -1341,6 +1531,7 @@
 				94EB277E23CEA4BB00069852 /* ControlFrame.swift in Sources */,
 				9499DACC23D10A9B009128AD /* PresetCell.swift in Sources */,
 				9499DAA423D10815009128AD /* PopUpMODController.swift in Sources */,
+				580C0AAD28B0798D00D4B69C /* AKTremolo.mm in Sources */,
 				94EB279223CEA4BB00069852 /* SynthWaveKit.swift in Sources */,
 				94EB278023CEA4BB00069852 /* ArpDirectionButton.swift in Sources */,
 				9499DAB223D10878009128AD /* UILabel+Rotate.swift in Sources */,
@@ -1359,24 +1550,36 @@
 				FEC4CD87244FAA3600E9BF15 /* Conductor+MIDI.swift in Sources */,
 				FEFB0E2923CE4EE7003A353D /* BaseParameter.swift in Sources */,
 				94EB272923CEA4BA00069852 /* UrlButton.swift in Sources */,
+				580C0A8828B0746200D4B69C /* AKMIDI.swift in Sources */,
 				94EB274F23CEA4BB00069852 /* MIDILearnable.swift in Sources */,
 				94EB276323CEA4BB00069852 /* Rate.swift in Sources */,
 				FEA10ED32467443800AAE3C6 /* PresetCollection.swift in Sources */,
+				580C0AA528B0773B00D4B69C /* ExceptionCatcher.swift in Sources */,
+				580C0AA728B0773B00D4B69C /* ExceptionCatcher.m in Sources */,
+				580C0A7F28B072B400D4B69C /* AKConnection.swift in Sources */,
+				580C0A8528B0738300D4B69C /* AKManager+SafeConnections.swift in Sources */,
 				94EB279723CEA4BB00069852 /* LFOPickerStyleKit.swift in Sources */,
 				94EB275723CEA4BB00069852 /* TimeSyncable.swift in Sources */,
 				FE37D84623C672F6006B65D9 /* Double+Extensions.swift in Sources */,
+				580C0A5228B0655300D4B69C /* AKMIDIListener.swift in Sources */,
+				580C0A6F28B0687A00D4B69C /* AKNode.swift in Sources */,
 				FE335C1523F21CF400C7A6BF /* ControlPanel.swift in Sources */,
 				94EB274523CEA4BA00069852 /* StepperStyleKit.swift in Sources */,
+				580C0AA828B078D700D4B69C /* AKMIDIInstrument.swift in Sources */,
 				94EB277923CEA4BB00069852 /* TouchPointStyleKit.swift in Sources */,
 				94EB276B23CEA4BB00069852 /* MIDIKnob.swift in Sources */,
+				580C0AB028B0798D00D4B69C /* AKTremolo.swift in Sources */,
 				94EB273923CEA4BA00069852 /* LedButton.swift in Sources */,
 				949F591923D3962A00102856 /* Parent+Delegates.swift in Sources */,
+				580C0AB228B0798D00D4B69C /* AKTremoloAudioUnit.swift in Sources */,
 				94EB272B23CEA4BA00069852 /* ChannelStepper.swift in Sources */,
 				9499DACD23D10A9B009128AD /* PresetCell.swift in Sources */,
 				FE77CB9024B52192001CAFD5 /* VelocityTaper.swift in Sources */,
 				94EB275F23CEA4BB00069852 /* FlatKnobStyleKit.swift in Sources */,
 				94EB278123CEA4BB00069852 /* ArpDirectionButton.swift in Sources */,
+				580C0A6928B0671600D4B69C /* AKCostelloReverb.swift in Sources */,
 				FE5A77912469B946008F55AF /* AutomaticPresetCollection.swift in Sources */,
+				580C0A6C28B0685100D4B69C /* AKLog.swift in Sources */,
 				9455326623D0EEF5009551F0 /* KeyboardContainer.swift in Sources */,
 				FE37D83923C66299006B65D9 /* ExampleApp_Parameters.swift in Sources */,
 				9499DA9F23D10815009128AD /* PopUpVelocityController.swift in Sources */,
@@ -1385,6 +1588,7 @@
 				94EB279123CEA4BB00069852 /* LFOWavePicker.swift in Sources */,
 				FEC5FDFD23E0EB0500677C3D /* Parent+Callbacks.swift in Sources */,
 				FE5A779E2469E888008F55AF /* Presets+TableViewDelegate.swift in Sources */,
+				580C0A9B28B0759500D4B69C /* AKGeneratorAudioUnitBase.mm in Sources */,
 				94EB274323CEA4BA00069852 /* Stepper.swift in Sources */,
 				94EB278D23CEA4BB00069852 /* VerticalSlider.swift in Sources */,
 				94EB276123CEA4BB00069852 /* ImageKnob.swift in Sources */,
@@ -1400,6 +1604,7 @@
 				94A0534F23D3BDE400E33EC2 /* SynthKeyboard.swift in Sources */,
 				94EB273B23CEA4BA00069852 /* RadioButton.swift in Sources */,
 				9429ED7F23CF63F8003C855B /* MoreController.swift in Sources */,
+				580C0A4C28B0649100D4B69C /* AKBluetoothMIDIButton.swift in Sources */,
 				9408A87423EB71A200023FAA /* Presets+PresetCellDelegate.swift in Sources */,
 				94EB277523CEA4BB00069852 /* AKVerticalPad.swift in Sources */,
 				FE37D83723C66299006B65D9 /* ExampleApp_AudioUnit.swift in Sources */,
@@ -1407,6 +1612,7 @@
 				94EB274123CEA4BA00069852 /* ToggleButton.swift in Sources */,
 				9499DAB523D10878009128AD /* UIView+GetSubViews.swift in Sources */,
 				94EB276923CEA4BB00069852 /* Knob+Touches.swift in Sources */,
+				580C0AAE28B0798D00D4B69C /* AKTremolo.mm in Sources */,
 				FE4AA8FE246F112F007DEA13 /* PresetConstants.swift in Sources */,
 				94EB278523CEA4BB00069852 /* ArpButtonStyleKit.swift in Sources */,
 				FE37D84723C672F6006B65D9 /* Fatten.swift in Sources */,
@@ -1415,28 +1621,37 @@
 				94EB272F23CEA4BA00069852 /* FilterToggleButton.swift in Sources */,
 				FEFB0E3723CFC123003A353D /* Conductor+Setters.swift in Sources */,
 				94775FE7246B1A04006ECF85 /* Presets+BankEditDelegate.swift in Sources */,
+				580C0A7928B0718B00D4B69C /* AKTable.swift in Sources */,
 				FEDB5D9523E0EC10003DBE44 /* Parent+MIDI.swift in Sources */,
 				94EB27A023CEAC8900069852 /* Bank.swift in Sources */,
+				580C0A7628B070A200D4B69C /* AKManager.swift in Sources */,
 				9499DA9823D10086009128AD /* AboutController.swift in Sources */,
 				FE335C1223F2068300C7A6BF /* ParameterController.swift in Sources */,
 				94EB273723CEA4BA00069852 /* TopUIButton.swift in Sources */,
+				580C0A8228B072D700D4B69C /* AKTremoloAudioUnit.swift in Sources */,
 				94EB278B23CEA4BB00069852 /* ArpButton.swift in Sources */,
 				9499DABA23D109D8009128AD /* MIDIInput.swift in Sources */,
 				FE5A77A4246A1929008F55AF /* Presets+EditPopoverDelegate.swift in Sources */,
+				580C0A8B28B074A200D4B69C /* AKManager+StartStop.swift in Sources */,
+				580C0A5828B065F100D4B69C /* AKSettings.swift in Sources */,
 				94EB279C23CEAC6B00069852 /* ChildView.swift in Sources */,
 				FEED0FEB23E0FEF4002EC6A8 /* NotificationNames.swift in Sources */,
 				FE37D83123C66299006B65D9 /* ExampleApp_DSPKernel.mm in Sources */,
 				FE0A56B323D66A8500330F1C /* ModwheelDestination.swift in Sources */,
+				580C0A9F28B0759500D4B69C /* AKAudioUnitBase.mm in Sources */,
 				FE37D82A23C66299006B65D9 /* DSPKernel.mm in Sources */,
 				9499DAA123D10815009128AD /* PopUpKeySettingsController.swift in Sources */,
 				FE43F3CC23D5051600A05F88 /* LocalNotificationCenter.swift in Sources */,
 				FE37D83423C66299006B65D9 /* AudioUnitViewController.swift in Sources */,
+				580C0A5B28B0663000D4B69C /* AKMixer.swift in Sources */,
 				94EB279323CEA4BB00069852 /* SynthWaveKit.swift in Sources */,
 				FEED0FF523E24BFC002EC6A8 /* ParameterValuePair.swift in Sources */,
 				94EB278323CEA4BB00069852 /* SequencerNoteButton.swift in Sources */,
 				9499DAAD23D10878009128AD /* ViewController+DisplayAlert.swift in Sources */,
 				94EB274D23CEA4BB00069852 /* ButtonStyleKit.swift in Sources */,
+				580C0A6428B066D000D4B69C /* AKAutoPanner.swift in Sources */,
 				FE2027DC23E9D0C8008C7921 /* BalanceMixer.swift in Sources */,
+				580C0A7C28B0721800D4B69C /* AKComponent.swift in Sources */,
 				94EB274923CEA4BA00069852 /* LedToggleStyleKit.swift in Sources */,
 				FEDEC89C23EDF80600BBA730 /* PresetsManager.swift in Sources */,
 				94EB275323CEA4BB00069852 /* TempoStyleKit.swift in Sources */,
@@ -1446,6 +1661,7 @@
 				FEC4CD8D244FAA9900E9BF15 /* MIDICCDefinition.swift in Sources */,
 				9499DAB123D10878009128AD /* String+Extensionst.swift in Sources */,
 				FE37D84A23C672F6006B65D9 /* Conductor.swift in Sources */,
+				580C0A5528B065BE00D4B69C /* AKDryWetMixer.swift in Sources */,
 				FEB840D82497F96200B66186 /* DiskManager.swift in Sources */,
 				94EB272D23CEA4BA00069852 /* FlatToggleStyleKit.swift in Sources */,
 				94384D2923D79B660070CC43 /* AppSetting.swift in Sources */,
@@ -1454,6 +1670,7 @@
 				94EB278923CEA4BB00069852 /* ArpDirectionStyleKit.swift in Sources */,
 				949F591C23D3973400102856 /* Parent+Segues.swift in Sources */,
 				94EB272723CEA4BA00069852 /* TopUIButtonStyleKit.swift in Sources */,
+				580C0A4F28B0651900D4B69C /* AudioKitHelpers.swift in Sources */,
 				94EB273323CEA4BA00069852 /* PresetUIButton.swift in Sources */,
 				94AD1CF8245A13410095FFB9 /* BankEditorPopOver.swift in Sources */,
 				94EB273F23CEA4BA00069852 /* ToggleSwitch.swift in Sources */,
@@ -1465,7 +1682,9 @@
 				94EB279523CEA4BB00069852 /* FilterWavePicker.swift in Sources */,
 				FEFB0E2C23CE5AD3003A353D /* ExampleInstrumentParameter.swift in Sources */,
 				94EB273523CEA4BA00069852 /* SynthUIButton.swift in Sources */,
+				580C0A8E28B074BC00D4B69C /* AKDevice.swift in Sources */,
 				9499DAA323D10815009128AD /* PopUpMIDIController.swift in Sources */,
+				580C0A9D28B0759500D4B69C /* AKDSPBase.mm in Sources */,
 				9499DAC923D10A9B009128AD /* MIDICell.swift in Sources */,
 				FE0A56B623D66BF900330F1C /* MIDIByte+Extension.swift in Sources */,
 				9408A87123EB70D900023FAA /* Presets+TextView.swift in Sources */,
@@ -1475,6 +1694,7 @@
 				FEFB0E2623CE45E4003A353D /* ParentController.swift in Sources */,
 				FEDB7B01245B6A0700D2EB29 /* Presets+CollectionCellDelegate.swift in Sources */,
 				94EB276523CEA4BB00069852 /* Knob.swift in Sources */,
+				580C0A9128B0752C00D4B69C /* AKError.swift in Sources */,
 				FEED0FE823E0F97C002EC6A8 /* AudioConstants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1910,6 +2130,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		580C0A3F28B0606400D4B69C /* XCRemoteSwiftPackageReference "AudioKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/andretodman/AudioKit";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+		580C0A4428B0607E00D4B69C /* XCRemoteSwiftPackageReference "AudioKitUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AudioKit/AudioKitUI";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.2.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		580C0A4028B0606400D4B69C /* AudioKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 580C0A3F28B0606400D4B69C /* XCRemoteSwiftPackageReference "AudioKit" */;
+			productName = AudioKit;
+		};
+		580C0A4528B0607E00D4B69C /* AudioKitUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 580C0A4428B0607E00D4B69C /* XCRemoteSwiftPackageReference "AudioKitUI" */;
+			productName = AudioKitUI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = FE37D7D523C5132E006B65D9 /* Project object */;
 }

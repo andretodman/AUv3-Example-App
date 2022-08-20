@@ -8,6 +8,7 @@
 
 import AudioKit
 import ExampleApp_Assets
+import CoreMIDI
 
 class GeneratorBank: AKMIDIInstrument {
 
