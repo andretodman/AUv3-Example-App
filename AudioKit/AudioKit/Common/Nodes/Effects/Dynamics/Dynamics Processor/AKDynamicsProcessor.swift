@@ -174,7 +174,7 @@ open class AKDynamicsProcessor: AKNode, AKToggleable, AUEffect, AKInput {
         au[kDynamicsProcessorParam_ExpansionThreshold] = expansionThreshold
         au[kDynamicsProcessorParam_AttackTime] = attackDuration
         au[kDynamicsProcessorParam_ReleaseTime] = releaseDuration
-            au[kDynamicsProcessorParam_OverallGain] = masterGain
+        au[kDynamicsProcessorParam_OverallGain] = masterGain
     }
 
     public var inputNode: AVAudioNode {
